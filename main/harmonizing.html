@@ -34,278 +34,276 @@
 	<div class = "container-fluid">
 		<!-- Header -->
 		<div class = "card" id = "WebSiteHeader" style="background:url(banner.png); font-weight: bold;">
-		  <h1 class="card-header" style="background:none">
-		    <b>Harmonization Project</b>
+			<h1 class="card-header" style="background:none">
+		    		<b>Harmonization Project</b>
 			</h1>
-	  </div>
-			<!-- Step by step approach provided with divs. -->
-		  <div class="card-body">
-				<!-- First Step, Select Scale -->
-				<div class = "card" id = "scaleDiv">
-					<h2 class = "card-header">
-						<label id = "step1Label" onclick="firstStep()">Step 1</label>
-						<a  href = "#exampleModal"data-toggle="modal" data-target="#exampleModalScale">
-							<i class="far fa-question-circle"></i>
-						</a>
-					<!-- Modal -->
+	  	</div>
+		<!-- Step by step approach provided with divs. -->
+		<div class="card-body">
+			<!-- First Step, Select Scale -->
+			<div class = "card" id = "scaleDiv">
+				<h2 class = "card-header">
+					<label id = "step1Label" onclick="firstStep()">Step 1</label>
+					<a  href = "#exampleModal"data-toggle="modal" data-target="#exampleModalScale">
+						<i class="far fa-question-circle"></i>
+					</a>
+				<!-- Modal -->
 					<div class="modal fade" id="exampleModalScale" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelScale" aria-hidden="true">
-					  <div class="modal-dialog" role="document">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <h5 class="modal-title" id="exampleModalLabelScale">Help</h5>
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					          <span aria-hidden="true">&times;</span>
-					        </button>
-					      </div>
-					      <div class="modal-body">
-					        In music theory, a scale is any set of musical notes ordered by fundamental frequency or pitch. In general, Minor Scale is described as "Sad Scale", Major Scale is described as "Happy Scale".
-					      </div>
-					      <div class="modal-footer">
-					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					      </div>
-					    </div>
-					  </div>
-					</div>
-					</h2>
-					<div class = "card-body" id = "scaleCard">
-						<h3>
-							Please Select a scale
-						</h3>
-			    	<select name="slcScale" id="scale" required="true" onchange = "checkScale()" >
-							<option value="" disabled="true" selected="selected">Scale</option>
-							<option value="909">Major</option>
-							<option value="878">Minor</option>
-						</select>
-					</div>
-				</div>
-				<div style="height:10px"></div>
-				<!-- Second Step, Select Chord Progression-->
-				<div class = "card" id = "chordDiv">
-					<h2 class = "card-header">
-						<label id = "step2Label" onclick="secondStep()">Step 2</label>
-						<a  href = "#exampleModal"data-toggle="modal" data-target="#exampleModalTempo">
-							<i class="far fa-question-circle"></i>
-	  				</a>
-						<!-- Modal -->
-						<div class="modal fade" id="exampleModalTempo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelTempo" aria-hidden="true">
-							<div class="modal-dialog" role="document">
-	    					<div class="modal-content">
-	      					<div class="modal-header">
-	        					<h5 class="modal-title" id="exampleModalLabelTempo">Help</h5>
-	        					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          					<span aria-hidden="true">&times;</span>
-	        					</button>
-	      					</div>
-	      					<div class="modal-body">
-	        					A chord progression is a succession of musical chords, which are two or more notes, typically sounded simultaneously. There are 2 chord progressions you can choose.
-	      					</div>
-	      					<div class="modal-footer">
-	        					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-		      				</div>
-		    				</div>
-		  				</div>
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabelScale">Help</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  				<span aria-hidden="true">&times;</span>
+									</button>
+					      			</div>
+					      			<div class="modal-body">
+									In music theory, a scale is any set of musical notes ordered by fundamental frequency or pitch. In general, Minor Scale is described as "Sad Scale", Major Scale is described as "Happy Scale".
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+					    		</div>
 						</div>
-					</h2>
-					<div class = "card-body" id = "progressionCard">
-						<h3>
-							Please Select a Chord Progression
-						</h3>
-	        	<br/>
-		        <select name="slcChordProgression" id="progress" required="true" onchange = "checkProgression()" >
+					</div>
+				</h2>
+				<div class = "card-body" id = "scaleCard">
+					<h3>
+						Please Select a scale
+					</h3>
+					<select name="slcScale" id="scale" required="true" onchange = "checkScale()" >
+						<option value="" disabled="true" selected="selected">Scale</option>
+						<option value="909">Major</option>
+						<option value="878">Minor</option>
+					</select>
+				</div>
+			</div>
+			<div style="height:10px"></div>
+			<!-- Second Step, Select Chord Progression-->
+			<div class = "card" id = "chordDiv">
+				<h2 class = "card-header">
+					<label id = "step2Label" onclick="secondStep()">Step 2</label>
+					<a  href = "#exampleModal"data-toggle="modal" data-target="#exampleModalTempo">
+						<i class="far fa-question-circle"></i>
+	  				</a>
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModalTempo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelTempo" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+	    						<div class="modal-content">
+	      							<div class="modal-header">
+	        							<h5 class="modal-title" id="exampleModalLabelTempo">Help</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+	      							</div>
+	      							<div class="modal-body">
+									A chord progression is a succession of musical chords, which are two or more notes, typically sounded simultaneously. There are 2 chord progressions you can choose.
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+		    					</div>
+		  				</div>
+					</div>
+				</h2>
+				<div class = "card-body" id = "progressionCard">
+					<h3>
+						Please Select a Chord Progression
+					</h3>
+	        			<br/>
+		        		<select name="slcChordProgression" id="progress" required="true" onchange = "checkProgression()" >
 		  				<option disabled="true" value="" selected="selected">chord progressions</option>
-		  		    <option value="2511">ii V I - Jazz</option>
+		  		    		<option value="2511">ii V I - Jazz</option>
 		  				<option value="1765">i VII VI v - Spanish Four</option>
-		  		  </select>
-					</div>
+		  		  	</select>
 				</div>
-				<div style="height:10px"></div>
-				<!-- Third Step, Select Root Note-->
-				<div class = "card" id = "rootDiv">
-					<h2 class = "card-header">
-						<label id = "step3Label" onclick="thirdStep()">Step 3</label>
-						<a  href = "#exampleModal"data-toggle="modal" data-target="#exampleModalChord">
-							<i class="far fa-question-circle"></i>
+			</div>
+			<div style="height:10px"></div>
+			<!-- Third Step, Select Root Note-->
+			<div class = "card" id = "rootDiv">
+				<h2 class = "card-header">
+					<label id = "step3Label" onclick="thirdStep()">Step 3</label>
+					<a  href = "#exampleModal"data-toggle="modal" data-target="#exampleModalChord">
+						<i class="far fa-question-circle"></i>
 	  				</a>
-						<!-- Modal -->
-						<div class="modal fade" id="exampleModalChord" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelChord" aria-hidden="true">
-							<div class="modal-dialog" role="document">
-	    					<div class="modal-content">
-	      					<div class="modal-header">
-		        				<h5 class="modal-title" id="exampleModalLabelChord">Help</h5>
-		        				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-		          				<span aria-hidden="true">&times;</span>
-		        				</button>
-	      					</div>
-	      					<div class="modal-body">
-		        				In music theory, the concept of root is the idea that a chord can be represented and named by one of its notes. Following that concept you can assign the root note as your desire.
-		      				</div>
-	      					<div class="modal-footer">
-		        				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-		      				</div>
-		    				</div>
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModalChord" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelChord" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+	    						<div class="modal-content">
+	      							<div class="modal-header">
+		        						<h5 class="modal-title" id="exampleModalLabelChord">Help</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+	      							</div>
+	      							<div class="modal-body">
+									In music theory, the concept of root is the idea that a chord can be represented and named by one of its notes. Following that concept you can assign the root note as your desire.
+								</div>
+	      							<div class="modal-footer">
+		        						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      						</div>
+		    					</div>
 		  				</div>
-						</div>
-					</h2>
-					<div class = "card-body" id = "rootCard">
-						<h3>
-							Please Select a Root Note
-						</h3>
-		        <select name="slcChord" id="root" required="true" onchange = "checkRoot()"  style="width:150px; margin-top:2px;margin-bottom:2px" >
-		          <option disabled="true" value="" selected="selected">Root Note</option>
-		          <option value="A3">A3</option>
-		          <option value="Bb3">Bb3</option>
-		          <option value="B3">B3</option>
-		          <option value="C3">C3</option>
-		          <option value="Db3">Db3</option>
-		          <option value="D3">D3</option>
-		          <option value="Eb3">Eb3</option>
-		          <option value="E3">E3</option>
-		          <option value="F3">F3</option>
-		          <option value="Gb3">Gb3</option>
-		          <option value="G3">G3</option>
-		          <option value="Ab3">Ab3</option>
-		        </select>
 					</div>
+				</h2>
+				<div class = "card-body" id = "rootCard">
+					<h3>
+						Please Select a Root Note
+					</h3>
+					<select name="slcChord" id="root" required="true" onchange = "checkRoot()"  style="width:150px; margin-top:2px;margin-bottom:2px" >
+						<option disabled="true" value="" selected="selected">Root Note</option>
+						<option value="A3">A3</option>
+						<option value="Bb3">Bb3</option>
+						<option value="B3">B3</option>
+						<option value="C3">C3</option>
+						<option value="Db3">Db3</option>
+						<option value="D3">D3</option>
+						<option value="Eb3">Eb3</option>
+						<option value="E3">E3</option>
+						<option value="F3">F3</option>
+						<option value="Gb3">Gb3</option>
+						<option value="G3">G3</option>
+						<option value="Ab3">Ab3</option>
+					</select>
 				</div>
-				<div style="height:10px"></div>
-				<!-- Fourth Step, Create Note Durations-->
-				<div class = "card" id = "timeDiv">
-					<h2 class = "card-header">
-						<label id = "step4Label" onclick="fourthStep()">Step 4</label>
-						<a  href = "#exampleModal"data-toggle="modal" data-target="#exampleModalTime">
-							<i class="far fa-question-circle"></i>
+			</div>
+			<div style="height:10px"></div>
+			<!-- Fourth Step, Create Note Durations-->
+			<div class = "card" id = "timeDiv">
+				<h2 class = "card-header">
+					<label id = "step4Label" onclick="fourthStep()">Step 4</label>
+					<a  href = "#exampleModal"data-toggle="modal" data-target="#exampleModalTime">
+						<i class="far fa-question-circle"></i>
 	  				</a>
-						<!-- Modal -->
-						<div class="modal fade" id="exampleModalTime" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelTime" aria-hidden="true">
-							<div class="modal-dialog" role="document">
-	    					<div class="modal-content">
-	      					<div class="modal-header">
-		        				<h5 class="modal-title" id="exampleModalLabelTime">Help</h5>
-		        				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-		          				<span aria-hidden="true">&times;</span>
-		        				</button>
-	      					</div>
-	      					<div class="modal-body">
-		        				The length of time that a note played is called its note duration, which is determined by the type of note. In the list of note durations; whole note is 4, half note is 2, quarter note is 1, eighth note is 0.5.
-		      				</div>
-	      					<div class="modal-footer">
-		        				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-		      				</div>
-		    				</div>
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModalTime" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelTime" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+	    						<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabelTime">Help</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+	      							</div>
+								<div class="modal-body">
+									The length of time that a note played is called its note duration, which is determined by the type of note. In the list of note durations; whole note is 4, half note is 2, quarter note is 1, eighth note is 0.5.
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+		    					</div>
 		  				</div>
-						</div>
-					</h2>
-					<div class = "card-body" id = "timeCard">
-						<table>
-							<tr>
-								<td>
-									<h3>
-										<button onclick="durationsGeneration()" style="width:150px; margin-top:2px;margin-bottom:2px">Generate Note Durations</button>
-									</h3>
-								</td>
-								<td style="text-align:left; font-size:9pt">
-									<ul id="timeUl" >
-					        </ul>
-								</td>
-							</tr>
-						</table>
 					</div>
+				</h2>
+				<div class = "card-body" id = "timeCard">
+					<table>
+						<tr>
+							<td>
+								<h3>
+									<button onclick="durationsGeneration()" style="width:150px; margin-top:2px;margin-bottom:2px">Generate Note Durations</button>
+								</h3>
+							</td>
+							<td style="text-align:left; font-size:9pt">
+								<ul id="timeUl" >
+								</ul>
+							</td>
+						</tr>
+					</table>
 				</div>
-				<div style="height:10px"></div>
-				<!-- Fifth Step, Generation, Evolution and everything else.-->
-				<div class = "card" id = "populationDiv">
-					<h2 class = "card-header">
-							<label id = "step5Label" onclick="fifthStep()">Step 5</label>
-							<a  href = "#exampleModal"data-toggle="modal" data-target="#exampleModalPop">
-								<i class="far fa-question-circle"></i>
-		  				</a>
-							<!-- Modal -->
-							<div class="modal fade" id="exampleModalPop" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelPop" aria-hidden="true">
-								<div class="modal-dialog" role="document">
-		    					<div class="modal-content">
-		      					<div class="modal-header">
-			        				<h5 class="modal-title" id="exampleModalLabelPop">Help</h5>
-			        				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			          				<span aria-hidden="true">&times;</span>
-			        				</button>
-		      					</div>
-		      					<div class="modal-body">
-			        				Average fitness is how fit the melody and chord progression, calculated. As the result gets closer to 1, it gets fitter.
-			      				</div>
-		      					<div class="modal-footer">
-			        				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-			      				</div>
+			</div>
+			<div style="height:10px"></div>
+			<!-- Fifth Step, Generation, Evolution and everything else.-->
+			<div class = "card" id = "populationDiv">
+				<h2 class = "card-header">
+					<label id = "step5Label" onclick="fifthStep()">Step 5</label>
+					<a  href = "#exampleModal"data-toggle="modal" data-target="#exampleModalPop">
+						<i class="far fa-question-circle"></i>
+					</a>
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModalPop" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelPop" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabelPop">Help</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									Average fitness is how fit the melody and chord progression, calculated. As the result gets closer to 1, it gets fitter.
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
 			    				</div>
-			  				</div>
-							</div>
-					</h2>
-					<div class = "card-body" id = "populationCard">
-						<table style="width:1000px; font-family:Arial; font-size:12pt; font-weight:normal">
-						  <tr>
-						    <td>
-									<h3>
-										<button id="btnNoteGeneration" onclick="newPopulation()" style="width:150px; margin-top:2px;margin-bottom:2px">Generate New Population</button>
-									</h3>
-								</td>
-						    <td style="text-align:center">
-									Notes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Average Fitness
-								</td>
-						  </tr>
-						  <tr>
-						    <td>Best Fitness: </td>
-						    <td style="text-align:right; font-size:9pt">
-									<ul id="fittestUl">
-										<li></li>
-					        </ul>
-								</td>
-						  </tr>
-						  <tr>
-						    <td>2nd Best Fitness:</td>
-						    <td style="text-align:right; font-size:9pt">
-									<ul id="secondfittestUl">
-										<li></li>
-					        </ul>
-								</td>
-						  </tr>
-						  <tr>
-						    <td style="vertical-align:top">Generation:
-									<br/>
-									<br/>
-									<br/>
-									<br/>
-									<br/>
-									<button name="btnEvo" id="67" onclick="aa()" style="width:150px; margin-top:2px;margin-bottom:2px">Evolution</button>
-						      <br/>
-									<button name="btnPl" id="66" onclick="harlemShake()" style="width:150px; margin-top:2px;margin-bottom:2px">Play</button>
-									<br/>
-									<a href = "#exampleModal"data-toggle="modal" data-target="#exampleModal">
-										<i class="far fa-question-circle fa-2x"></i>
-									</a>
-									<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-										<div class="modal-dialog" role="document">
-											<div class="modal-content">
-												<div class="modal-header">
-													<h5 class="modal-title" id="exampleModalLabel">Help</h5>
-													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-														<span aria-hidden="true">&times;</span>
-													</button>
-												</div>
-												<div class="modal-body">
-													Evolution Button takes the fittest and second fittest individual, applies an evolutionary process to make them fitter, than creates a new generation. Play button plays the fittest melody and selected chord progression together.
-												</div>
-												<div class="modal-footer">
-													<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-												</div>
+						</div>
+					</div>
+				</h2>
+				<div class = "card-body" id = "populationCard">
+					<table style="width:1000px; font-family:Arial; font-size:12pt; font-weight:normal">
+						<tr>
+							<td>
+								<h3>
+									<button id="btnNoteGeneration" onclick="newPopulation()" style="width:150px; margin-top:2px;margin-bottom:2px">Generate New Population</button>
+								</h3>
+							</td>
+							<td style="text-align:center">
+								Notes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Average Fitness
+							</td>
+						</tr>
+						<tr>
+							<td>Best Fitness: </td>
+							<td style="text-align:right; font-size:9pt">
+								<ul id="fittestUl">
+									<li></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>2nd Best Fitness:</td>
+							<td style="text-align:right; font-size:9pt">
+								<ul id="secondfittestUl">
+									<li></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td style="vertical-align:top">Generation:
+								<br/>
+								<br/>
+								<br/>
+								<br/>
+								<br/>
+								<button name="btnEvo" id="67" onclick="aa()" style="width:150px; margin-top:2px;margin-bottom:2px">Evolution</button>
+					      			<br/>
+								<button name="btnPl" id="66" onclick="harlemShake()" style="width:150px; margin-top:2px;margin-bottom:2px">Play</button>
+								<br/>
+								<a href = "#exampleModal"data-toggle="modal" data-target="#exampleModal">
+									<i class="far fa-question-circle fa-2x"></i>
+								</a>
+								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="exampleModalLabel">Help</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												Evolution Button takes the fittest and second fittest individual, applies an evolutionary process to make them fitter, than creates a new generation. Play button plays the fittest melody and selected chord progression together.
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 											</div>
 										</div>
 									</div>
-
-								</td>
-						    <td style="text-align:right; font-size:9pt" id="thList">
-
-								</td>
-						  </tr>
-						</table>
+								</div>
+							</td>
+							<td style="text-align:right; font-size:9pt" id="thList">
+							</td>
+						</tr>
+					</table>
 						<div id="boo"></div>
 					</div>
 				</div>
