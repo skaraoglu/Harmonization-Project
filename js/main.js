@@ -122,7 +122,7 @@ function getNoteDurations()
 //Function to play the music. Called by the harlemShake().
 function playChordProgression(cList, nList, nDList){
     MIDI.loadPlugin({
-    soundfontUrl: "./soundfont/",
+    soundfontUrl: "./main/soundfont/",
     instrument: "acoustic_grand_piano",
     onprogress: function(state, progress) {
       console.log(state, progress);
