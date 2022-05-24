@@ -1,4 +1,5 @@
-Harmonization Project.
+# Harmonization Project:
+skaraoglu.github.io/harmonization-project/ 
 This project creates a random melody and try to get a harmony between selected chord progression and evolved melody.
 To achieve this goal evolutionary process is applied to the random melody, with this process melody gets better in terms of being in a harmony with the chord progression.
 To run the application, several steps must be followed:
